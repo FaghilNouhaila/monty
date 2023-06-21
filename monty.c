@@ -2,8 +2,8 @@
 global_var var_global;
 /**
  * main - driver function for monty program
- * @ac: int num of arguments
- * @ay: opcode file
+ * @ac: int num of arguments(argc)
+ * @ay: opcode file (argv)
  * Return: 0
  */
 int main(int ac, char **av)

@@ -57,7 +57,7 @@ extern global_var var_global;
 
 void read_file(char *filename, stack_t **stack);
 char *parse_line(char *line, stack_t **stack, unsigned int line_number);
-typedef void (*instruct_func)(stack_t **stack,unsigned int line_number);
+typedef void (*instruct_func)(stack_t **stack, unsigned int line_number);
 instruct_func get_op_func(char *str);
 
 /*Functions Monty */
@@ -75,7 +75,7 @@ void _pchar(stack_t **stack, unsigned int line_number);
 void _pstr(stack_t **stack, unsigned int line_number);
 
 /*Functions math */
-void _sub(stack_t **stack,unsigned int line_number);
+void _sub(stack_t **stack, unsigned int line_number);
 void _add(stack_t **stack, unsigned int line_number);
 void _mul(stack_t **stack, unsigned int line_number);
 void _div(stack_t **stack, unsigned int line_number);
