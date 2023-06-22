@@ -1,4 +1,5 @@
 #include "monty.h"
+
 /**
  * f_queue - prints the top
  * @head: stack head
@@ -25,16 +26,12 @@ void addqueue(stack_t **head, int n)
 	aux = *head;
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
-	{
 		printf("Error\n");
-	}
 	new_node->n = n;
 	new_node->next = NULL;
 	if (aux)
-	{
 		while (aux->next)
 			aux = aux->next;
-	}
 	if (!aux)
 	{
 		*head = new_node;
